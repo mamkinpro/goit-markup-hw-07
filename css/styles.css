@@ -146,8 +146,8 @@ body {
   color: var(--accent-color);
 }
 .container-mobile-menu-contacts{
-  margin-bottom:40px;
-  margin-left:40px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .mobile-menu-contacts-tel{
   font-weight: 700;
