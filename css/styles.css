@@ -573,7 +573,7 @@ screen and (min-resolution: 2dppx) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 392px;
   min-height: 576px;
   background: #FCFCFC;
   border-radius: 4px;
