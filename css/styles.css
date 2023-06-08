@@ -60,6 +60,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-text-color);
+  
 
 }
 .logo-secondary-part-header {
@@ -1010,14 +1011,6 @@ screen and (min-resolution: 2dppx) {
     }
   
     .logo {
-      font-family: "Raleway", sans-serif;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 18px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--logo-text-color);
       margin-right: 76px;
     }
   
