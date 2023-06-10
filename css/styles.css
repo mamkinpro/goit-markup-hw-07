@@ -842,6 +842,9 @@ screen and (min-resolution: 2dppx) {
   .logo-footer{
     display:inline-block;
   }
+  .footer-button{
+    margin: 0;
+  }
 }   
 
 /*============TABLET============*/
