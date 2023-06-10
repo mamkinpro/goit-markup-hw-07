@@ -814,6 +814,9 @@ screen and (min-resolution: 2dppx) {
     column-gap: 16px;
     justify-content: center;
   }
+  .social-list-item {
+    width: calc((100% - 224px) / 4);
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1157px){
