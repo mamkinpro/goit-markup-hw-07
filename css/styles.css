@@ -383,14 +383,6 @@ screen and (min-resolution: 2dppx) {
 
 }
 
-.customers-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap:72px 16px;
-  justify-content: center;
-
-}
-
 .customers-list-item {}
 
 .customers-list-item-link {
@@ -573,7 +565,7 @@ screen and (min-resolution: 2dppx) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
+  width: 408px;
   min-height: 576px;
   background: #FCFCFC;
   border-radius: 4px;
@@ -790,6 +782,11 @@ screen and (min-resolution: 2dppx) {
 .modal-btn-submit:focus {
   background-color: var(--accent-color);
 }
+@media screen and (max-width:427px){
+  .modal{
+    max-width:100%;
+  }
+}
 @media screen and (max-width:767px){
   .logo-footer {
     display: flex;
@@ -805,8 +802,16 @@ screen and (min-resolution: 2dppx) {
   .advantages-items-list:not(:first-child) {
     margin-top: 72px; 
   }
-
+  .customers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+    justify-content: center;
+  }
 }
+
 @media screen and (min-width:768px) and (max-width:1157px){
   .address-list {
     display: block;
@@ -949,9 +954,20 @@ screen and (min-resolution: 2dppx) {
     gap: 64px 24px;
     justify-content: center;
   }
-  .customers-list{
-    gap:72px 24px;
+  .customers-container{
+    width:584px;
   }
+  .customers-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+  .customers-list-item-link{
+    width:168px;
+  }
+
   
   .logo-footer{ 
     margin-bottom: 16px;
@@ -1101,10 +1117,12 @@ screen and (min-resolution: 2dppx) {
       padding-top: 188px;
       padding-bottom: 188px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop.jpg);
-      min-width: 1440px;
+      max-width: 1440px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      margin-left:auto;
+      margin-right:auto;
     } 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -1319,6 +1337,9 @@ screen and (min-resolution: 2dppx) {
     .section-customers {
       padding-top: 120px;
       padding-bottom: 120px;
+    }
+    .customers-container{
+      width:1158px;
     }
   
     .customers-title {
