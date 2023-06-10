@@ -109,7 +109,11 @@ body {
 
 .mobile-menu-container {
   position: relative;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
   padding-left:24px;
   padding-bottom:40px;
   padding-top:80px;
@@ -146,7 +150,7 @@ body {
   color: var(--accent-color);
 }
 .contact-item-list{
-  margin-top:284px;
+ 
   margin-bottom:48px;
 }
 .contact-item:first-child{
@@ -349,8 +353,8 @@ screen and (min-resolution: 2dppx) {
   align-items: center;
   border-radius: 50%;
   background-color: #4D5AE5;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -834,6 +838,9 @@ screen and (min-resolution: 2dppx) {
     flex-wrap: wrap;
     margin-left: -24px;
     margin-top: -72px;
+  }
+  .logo-footer{
+    display:inline-block;
   }
 }   
 
